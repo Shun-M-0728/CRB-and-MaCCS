@@ -19,7 +19,8 @@ With funding, CRB could outsource development of a comprehensive, queryable data
 3. Connecting above these two datasets
 4. Organizing the combined budget data, including aggregating the amount of the same budget
 
-# Structure of this repo
+## Structure of this repo
+```text
 +---Data
 |   |   .DS_Store
 |   |   2023_budget_bill_final.csv    # Combining the original budget bill with trailer bills
