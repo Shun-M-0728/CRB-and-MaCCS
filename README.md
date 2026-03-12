@@ -18,6 +18,7 @@ With funding, CRB could outsource development of a comprehensive, queryable data
 2. Parsering the trailer bills(AB102, SB104 and SB105)
 3. Connecting above these two datasets
 4. Organizing the combined budget data, including aggregating the amount of the same budget
+5. Connecting the budget bill and actual spending data, while creating crosswalk table
 
 ## Structure of this repo
 ```text
@@ -36,4 +37,5 @@ With funding, CRB could outsource development of a comprehensive, queryable data
         02_2023trailerbill_parser.ipynb    # For parsering the trailer bills   
         03_2023trailerbill_connection.ipynb    # For connecting above two datasets
         04_Budget_data_organized.ipynb    # For organizing above dataset
+        05_Connection_bill_to_fiscal.ipynb    # For connecting budget bill and actual spending data
         99_Fiscal_combine_sort.ipynb    # For combining fiscal data
