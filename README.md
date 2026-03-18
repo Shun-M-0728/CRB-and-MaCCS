@@ -22,20 +22,30 @@ With funding, CRB could outsource development of a comprehensive, queryable data
 
 ## Structure of this repo
 ```text
-+---Data
-|   |   .DS_Store
-|   |   2023_budget_bill_final.csv    # Combining the original budget bill with trailer bills
-|   |   2023_Budget_Final_Amounts.csv    # Organizing the combined budget data, including aggregating the amount of the same budget
-|   |   Fiscal_Data_Final.csv    # Combining fiscal data
-|   |   SB101_2023_cleaned.csv    # Original budget bill
-|   |
-|   +---FisCal_Data_Raw
-|   \---Trailer_Bills
+C:.
+│  README.md
+│
+├─Data
+|  |  2023_budget_bill_final.csv    # Combining the original budget bill with trailer bills
+|  |  2023_Budget_Final_Amounts.csv    # Organizing the combined budget data, including aggregating the amount of the same budget
+|  |  Fiscal_Data_Final.csv    # Combining fiscal data
+|  |  SB101_2023_cleaned.csv    # Original budget bill
+│  │  Crosswalk_FY23P01.csv    # Crosswalk table for the first period for FY23
+│  │  Detail_FY23P01.csv    # Detail data for the first period for FY23
+│  │  Final_Budget_Expenditure_Details.csv    # Detail data after first period for FY23
+│  │  Final_Crosswalk_Table_FY23-25.csv    # Crosswalk table after first period for FY23 
+│  │  Budget_Spending_Summary_FY23-25.csv     # Summary of datail data : "Final_Budget_Expenditure_Details.csv"
+|  |
+|  ├─FisCal_Data_Raw
+|  └─Trailer_Bills
+├─Data
+|       Data_Integration_Design.md     # Explain how to integrate
 |
-\---src
+└─src
         01_2023BudgetAct_Parser.ipynb    # For parsering the original budget bill
         02_2023trailerbill_parser.ipynb    # For parsering the trailer bills   
         03_2023trailerbill_connection.ipynb    # For connecting above two datasets
         04_Budget_data_organized.ipynb    # For organizing above dataset
         05_Connection_bill_to_fiscal.ipynb    # For connecting budget bill and actual spending data
         99_Fiscal_combine_sort.ipynb    # For combining fiscal data
+```
