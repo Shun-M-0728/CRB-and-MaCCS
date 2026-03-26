@@ -35,10 +35,12 @@ C:.
 │  │  Final_Budget_Expenditure_Details.csv    # Detail data after first period for FY23
 │  │  Final_Crosswalk_Table_FY23-25.csv    # Crosswalk table after first period for FY23 
 │  │  Budget_Spending_Summary_FY23-25.csv     # Summary of datail data : "Final_Budget_Expenditure_Details.csv"
+│  │  Monthly_Budget_Spending_FY23-25.csv     # Monthly summary for visualization 
 |  |
 |  ├─FisCal_Data_Raw
 |  └─Trailer_Bills
-├─Data
+|
+├─doc
 |       Data_Integration_Design.md     # Explain how to integrate
 |
 └─src
